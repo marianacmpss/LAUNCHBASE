@@ -1,35 +1,13 @@
 
-const programadores = [{
+const usuario = {
     nome: 'carlos',
     idade: 32,
-},
+    tecnologia: [ 
+      { tech: 'C++', especialidade: 'desktop' },
+      { tech: 'Python', especialidade: 'Data Science' },
+      { tech: 'JavaScript', especialidade: 'Web/Mobile' }
+              ]
+}
 
-{
-    nome: 'pedro',
-    idade: 25,
-},
-
-{
-    nome:'rafaela',
-    idade: 28,
-}]
-
-const tecnologia = [{
-    carlos: {tecnologias: 'C++', 
-    especialidade: 'Desktop'},
-    },
-
-    {
-        pedro: {tecnologias: 'Python', 
-    especialidade: 'Data Science'},
-    },
-
-    {
-    rafela: {tecnologias: 'JavaScript', 
-    especialidade: 'Web/Mobile'}
-    }
-    ]
-
-    const usuario = (`o usuário ${programadores[0].nome} tem ${programadores[0].idade} anos e usa a tecnologia ${tecnologia[0].carlos.tecnologias} com especialidade em ${tecnologia[0].carlos.especialidade}`)
-
-    console.log(usuario)
+        console.log(`o programador ${usuario.nome} tem ${usuario.idade} anos e usa a tecnologia ${usuario.tecnologia[0].tech} 
+        com especialidade em ${usuario.tecnologia[0].especialidade}`)
